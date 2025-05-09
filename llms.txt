@@ -1,0 +1,20 @@
+# Drop Duchy Fan Hub
+
+> A fan-made website dedicated to the innovative puzzle roguelike strategy game, Drop Duchy (2025). This site offers information on gameplay, features, updates, community discussions, and links to other Tetris-like games.
+
+This website aims to be a comprehensive resource for players and fans of Drop Duchy. Explore detailed guides, stay updated with the latest news, and engage with the community.
+
+## Main Navigation
+
+- [Home](https://dropduchy.org/index.html): Overview of Drop Duchy, key features, and community highlights.
+- [Wiki](https://dropduchy.org/wiki.html): In-depth information about game mechanics, cards, factions, biomes, and more.
+- [Download](https://dropduchy.org/drop-duchy-download.html): Information on where to download the Drop Duchy game (links to official sources).
+- [Updates](https://dropduchy.org/update.html): Fan-curated log of game updates, patch notes, and developer insights.
+- [Blog](https://dropduchy.org/blog.html): Blog posts discussing game strategies, news, and deeper dives into specific aspects of Drop Duchy.
+- [More Tetris](https://dropduchy.org/more-tetris.html): A curated list of other Tetris-like games for fans of the genre.
+
+## Blog Posts
+
+- [Combat Guide](https://dropduchy.org/blog-post-combat-guide.html): A detailed guide to mastering combat in Drop Duchy.
+- [Deep Dive into Drop Duchy](https://dropduchy.org/blog-post-deep-dive-into-drop-duchy.html): Exploring core gameplay, unique features, and strategy.
+- [Launch Success](https://dropduchy.org/blog-post-launch-success.html): Player reactions and positive reviews following the game's launch. 

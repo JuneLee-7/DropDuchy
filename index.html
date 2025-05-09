@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Drop Duchy Game: Build Your Empire in 2025</title>
+    <meta name="description" content="Fan-made hub for Drop Duchy (2025)! Explore gameplay, features, updates, and community for this innovative puzzle roguelike strategy game."/>
+    <meta name="keywords" content="drop duchy, puzzle game, strategy game, roguelike, indie game, tetris like, fan website"/>
+    <link rel="canonical" href="https://dropduchy.org/index.html"/>
+    <meta property="og:title" content="Drop Duchy - Fan Hub for the Ultimate Puzzle Strategy Game (2025)"/>
+    <meta property="og:description" content="Your community hub for Drop Duchy! Discover game features, latest news, fan strategies, and download information for this unique Tetris-inspired roguelike adventure."/>
+    <meta property="og:url" content="https://dropduchy.org/index.html"/>
+    <meta property="og:image" content="https://dropduchy.org/images/opengraph.png"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@YOUR_TWITTER_HANDLE"/>
+    <meta name="twitter:title" content="Drop Duchy - Fan-Made Strategy Puzzle Hub"/>
+    <meta name="twitter:description" content="Join the Drop Duchy fan community! News, guides, and discussions for the hit puzzle roguelike."/>
+    <meta name="twitter:image" content="https://dropduchy.org/images/opengraph.png"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="48x48"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Basic theme switcher (mimicking original)
+        ((e,t,r,n,o,l,a,i)=>{let u=document.documentElement,s=["light","dark"];function c(t){(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&l?o.map(e=>l[e]||e):o;r?(u.classList.remove(...n),u.classList.add(t)):u.setAttribute(e,t)}),i&&s.includes(t)&&(u.style.colorScheme=t)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=a&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})("class","theme","light",null,["light","dark"],null,true,true);
+    </script>
+</head>
+<body class="antialiased bg-[#f5eadd] text-foreground">
+
+    <header class="sticky top-0 z-50 w-full border-b border-[#654321]/50 bg-[#654321] py-4">
+        <div class="container px-4 sm:px-6 flex items-center justify-between mx-auto">
+            <div class="flex items-center gap-2">
+                <img alt="Drop Duchy logo" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="images/game-logo.png"/>
+                <a class="font-bold text-xl text-white" href="/">Drop Duchy</a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="wiki.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll-text mr-2 h-4 w-4"><path d="M15 12h-5"></path><path d="M15 8h-5"></path><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg>Wiki
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="drop-duchy-download.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-down mr-2 h-4 w-4"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M12 18v-6"></path><path d="m9 15 3 3 3-3"></path></svg>Download
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="update.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw mr-2 h-4 w-4"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>Update
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="blog.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sticky-note mr-2 h-4 w-4"><path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8Z"></path><path d="M15 3v4a2 2 0 0 0 2 2h4"></path></svg>Blog
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="more-tetris.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2 mr-2 h-4 w-4"><line x1="6" y1="11" x2="10" y2="11" /><line x1="8" y1="9" x2="8" y2="13" /><line x1="15" y1="12" x2="15.01" y2="12" /><line x1="18" y1="10" x2="18.01" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.01.152v0a4.842 4.842 0 0 0 4.518 4.971A4.842 4.842 0 0 0 12 18.211a4.842 4.842 0 0 0 4.79-4.5a4.842 4.842 0 0 0 4.518-4.971v0c0-.05-.004-.1-.01-.152A4 4 0 0 0 17.32 5z" /></svg>More Tetris
+                </a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button id="mobile-menu-button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-[#805A3B] hover:text-white h-9 w-9 md:hidden" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu text-white"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#654321] border-t border-[#654321]/50">
+            <nav class="flex flex-col items-center gap-4 py-4">
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="wiki.html">Wiki</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="drop-duchy-download.html">Download</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="update.html">Update</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="blog.html">Blog</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="more-tetris.html">More Tetris</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex min-w-screen min-h-screen flex-col pt-[0rem] items-center justify-between">
+        <div class="absolute z-[-99] pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        
+        <main class="min-h-screen px-4 sm:px-0 relative w-full">
+            <section class="py-12 md:py-16 px-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-foreground">Drop Duchy: A Fan Favorite for Building, Strategizing & Conquering!</h1>
+                            <p class="text-muted-foreground mb-6">Many players are calling Drop Duchy a fresh take on geometric puzzle gameplay! It appears to blend deckbuilding, puzzle, and rogue-lite elements in a unique way. The core idea seems to be strategically placing diverse blocks to build a realm, manage resources, and command an army. With buzz about over 110 unique cards and 100+ missions across 3 factions, every run promises a new challenge. Word is, defeat is just a new beginning to unlock more power!</p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#gameplay-section" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-[#805A3B] text-white shadow hover:bg-[#654321]/90 h-9 px-4 py-2">Explore Game Features</a>
+                                <a href="drop-duchy-download.html">
+                                    <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-[#805A3B] bg-transparent shadow-sm hover:bg-[#D2B48C]/50 hover:text-[#654321] text-[#654321] h-9 px-4 py-2 w-full sm:w-auto">Find Download Info</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/20 z-10">
+                                <button id="play-trailer-button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-16 w-16 rounded-full bg-[#805A3B]/80 backdrop-blur-sm text-white hover:bg-[#654321]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span class="sr-only">Play Drop Duchy introduction video</span>
+                                </button>
+                            </div>
+                            <img id="video-poster" src="images/trailer_poster.jpg" alt="Drop Duchy Trailer Poster" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+                            <div id="video-container" class="relative overflow-hidden rounded-lg aspect-video hidden">
+                                <iframe src="https://www.youtube.com/embed/75RalDte2sE" title="Watch the Drop Duchy Gameplay Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen class="absolute inset-0 w-full h-full border-0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 md:py-16">
+                <div class="flex flex-col items-center gap-4 container mx-auto">
+                    <div class="w-full max-w-4xl flex flex-col justify-center items-center text-center px-4">
+                        <h2 class="text-2xl md:text-3xl font-bold">Game Gallery: Explore Stunning Screenshots</h2>
+                        <p class="text-sm text-muted-foreground">Discover the immersive world of Drop Duchy through our image gallery. Browse high-quality screenshots and captivating visuals.</p>
+                    </div>
+                    <div class="relative aspect-video w-full max-w-4xl overflow-hidden rounded-xl border border-border">
+                        <img id="gallery-main-image" alt="Selected Drop Duchy image" decoding="async" data-nimg="fill" class="object-cover w-full h-full" src="images/gallery/Drop_Duchy_1.png" loading="lazy"/>
+                    </div>
+                    <div class="flex w-full max-w-4xl items-center gap-2 px-4">
+                        <button id="gallery-prev" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#805A3B] bg-transparent shadow-sm hover:bg-[#D2B48C]/50 hover:text-[#654321] text-[#654321] h-9 w-9 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left h-4 w-4"><path d="m15 18-6-6 6-6"></path></svg>
+                        </button>
+                        <div id="gallery-thumbnails" class="flex flex-1 gap-2 overflow-x-auto py-2 scrollbar-hide">
+                            <!-- Thumbnails will be added here by JS -->
+                        </div>
+                        <button id="gallery-next" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#805A3B] bg-transparent shadow-sm hover:bg-[#D2B48C]/50 hover:text-[#654321] text-[#654321] h-9 w-9 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4"><path d="m9 18 6-6-6-6"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gameplay-section" class="py-12 md:py-16 mx-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-foreground">Understanding Drop Duchy: How Players Build Their Empires</h2>
+                        <p class="text-muted-foreground max-w-3xl mx-auto">Curious how to get started in the world of Drop Duchy? Here's what fellow players have figured out.</p>
+                        <div class="flex my-1 flex-wrap gap-2 justify-center mt-4">
+                            <a class="text-sm p-2 rounded-full focus:outline-none focus:shadow-outline bg-purple-500/10 text-purple-500 hover:bg-purple-200" href="wiki.html#items">Items Deep Dive</a>
+                            <a class="text-sm p-2 rounded-full focus:outline-none focus:shadow-outline bg-green-500/10 text-green-500 hover:bg-green-200" href="wiki.html#products">Product Strategies</a>
+                            <!-- Add more links as needed -->
+                        </div>
+                    </div>
+                    <div class="relative grid md:grid-cols-2 gap-12 items-center mb-12">
+                        <div class="absolute inset-0 -z-10 "><img alt="Background" loading="lazy" decoding="async" data-nimg="fill" class="object-cover blur-sm opacity-90 w-full h-full" style="color:transparent" src="images/gallery/Drop_Duchy_1.png"/></div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-3 text-green-400">Mastering Strategic Block Placement</h3>
+                            <p class=" mb-4 text-gray-200">Players find that aligning diverse blocks representing landscapes and buildings is key to maximizing resource production and unit generation. Every placement truly counts!</p>
+                            <a href="wiki.html#cards"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm transition-colors shadow hover:bg-[#654321]/90 bg-[#805A3B] p-2 h-auto font-medium text-white">Explore Card Strategies →</button></a>
+                        </div>
+                        <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg"><img alt="Crafting Your Product" loading="lazy" width="500" height="300" decoding="async" data-nimg="1" class="object-cover w-full h-full" style="color:transparent" src="images/manufacturing.gif"/></div>
+                    </div>
+                    <!-- More gameplay blocks will be added here -->
+                </div>
+            </section>
+            
+            <section class="py-16 bg-secondary px-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-foreground">What Makes Drop Duchy Special? Key Features Fans Love</h2>
+                        <p class="text-muted-foreground max-w-3xl mx-auto">The community seems to agree that Drop Duchy offers an innovative blend of block-dropping puzzles, deck-building strategy, and roguelike progression.</p>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">🧩</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Tetris With a Twist</h3>
+                            <p class="text-muted-foreground">Master block placement strategy to create efficient resource networks. Each piece represents landscapes and buildings that interact with surrounding tiles.</p>
+                        </div>
+                         <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">🃏</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Strategic Deck Building</h3>
+                            <p class="text-muted-foreground">Collect and upgrade cards that determine which blocks drop into your playfield. Craft powerful combinations to maximize resource production.</p>
+                        </div>
+                         <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">⚔️</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Tactical Combat</h3>
+                            <p class="text-muted-foreground">Position your military structures strategically while sabotaging enemy positions. Each round ends with an exciting battle sequence based on your board layout.</p>
+                        </div>
+                        <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">🔄</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Roguelike Progression</h3>
+                            <p class="text-muted-foreground">Each run teaches you new strategies. Unlock permanent upgrades and new cards to use in future attempts as you face increasingly challenging boss encounters.</p>
+                        </div>
+                         <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">🏞️</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Resource Synergies</h3>
+                            <p class="text-muted-foreground">Place farms near grasslands, fortresses by forests, and discover countless combinations. Creating lines multiplies resource generation instead of clearing them.</p>
+                        </div>
+                         <div class="bg-card p-6 rounded-lg shadow-sm text-center">
+                            <div class="flex justify-center mb-4 text-4xl">🧠</div>
+                            <h3 class="text-lg font-semibold mb-2 text-foreground">Challenging Bosses</h3>
+                            <p class="text-muted-foreground">Face unique bosses like The Wall and The Keep, each with special mechanics that transform how you approach block placement and resource management.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12 bg-accent px-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <h2 class="text-2xl md:text-3xl font-bold text-accent-foreground">Curious About Forging Your Legacy? Discover Drop Duchy!</h2>
+                        <a href="drop-duchy-download.html"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors shadow h-9 px-4 py-2 bg-[#805A3B] hover:bg-[#654321]/90 text-white">Check Out Download Options</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 px-4 sm:px-6 bg-black text-white">
+                 <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">Community Tips for Success</h2>
+                        <p class="text-gray-400 text-lg">Players have shared these strategies for conquering Drop Duchy's unique challenges.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-8 left-0 right-0 h-px bg-border/20 hidden md:block"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">1</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Resource Adjacency</h3>
+                                <p class="text-muted-foreground text-center">Always place resource-generating buildings next to compatible terrain. Farms near grasslands produce 50% more wheat!</p>
+                            </div>
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">2</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Complete Lines</h3>
+                                <p class="text-muted-foreground text-center">Unlike traditional Tetris, completing lines multiplies resources rather than clearing them. Aim for multiple line completions whenever possible.</p>
+                            </div>
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">3</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Enemy Placement</h3>
+                                <p class="text-muted-foreground text-center">When forced to place enemy structures, isolate them from resource-rich areas and surround them with defensive buildings for optimal battle outcomes.</p>
+                            </div>
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">4</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Deck Management</h3>
+                                <p class="text-muted-foreground text-center">Focus on unlocking and upgrading complementary cards. A lean, synergistic deck is more effective than a large collection of random pieces.</p>
+                            </div>
+                            <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">5</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Boss Preparation</h3>
+                                <p class="text-muted-foreground text-center">Each boss has unique mechanics that change your strategy. For The Wall, focus on height efficiency; for The Keep, concentrate military power on fewer fronts.</p>
+                            </div>
+                             <div class="relative">
+                                <div class="w-16 h-16 rounded-full bg-background border-2 border-border flex items-center justify-center mx-auto mb-6 relative z-10"><span class="text-2xl font-bold text-foreground">6</span></div>
+                                <h3 class="text-xl font-bold mb-3 text-center">Meta-Progression</h3>
+                                <p class="text-muted-foreground text-center">Prioritize unlocking permanent upgrades that align with your playstyle. Even failed runs grant experience points to improve future attempts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 px-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-foreground">What Are Players Saying?</h2>
+                        <p class="text-muted-foreground max-w-3xl mx-auto">Here's a glimpse into the community buzz around Drop Duchy's innovative gameplay.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border h-full transition-all duration-300 hover:shadow-md">
+                            <div class="p-6 flex flex-col h-full">
+                                <div class="flex text-amber-400 mb-2">
+                                    <!-- 5 Stars -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <p class="text-card-foreground mb-4 flex-grow">"Absolutely addictive blend of Tetris and deckbuilding! I love how completing lines doesn't clear them but instead boosts resource production. Just when I thought I'd seen every Tetris variant possible, Drop Duchy comes along and blows my mind. Lost an entire weekend to this game already!"</p>
+                                <div class="flex justify-between items-center mt-auto pt-4 border-t border-border">
+                                    <p class="text-muted-foreground text-sm font-medium">- BlockDropper87</p>
+                                    <span class="text-muted-foreground text-xs">May 15, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border h-full transition-all duration-300 hover:shadow-md">
+                            <div class="p-6 flex flex-col h-full">
+                                <div class="flex text-amber-400 mb-2">
+                                    <!-- 5 Stars -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <p class="text-card-foreground mb-4 flex-grow">"The boss battles are the highlight for me - especially The Wall. It completely changes how you approach block placement! Each run teaches you something new, and the permanent upgrades system means even failures feel rewarding. If you enjoy roguelikes or puzzle games, this is an absolute must-buy."</p>
+                                <div class="flex justify-between items-center mt-auto pt-4 border-t border-border">
+                                    <p class="text-muted-foreground text-sm font-medium">- RogueTetrominoQueen</p>
+                                    <span class="text-muted-foreground text-xs">May 10, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border h-full transition-all duration-300 hover:shadow-md">
+                            <div class="p-6 flex flex-col h-full">
+                                <div class="flex text-amber-400 mb-2">
+                                     <!-- 4 Stars -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <p class="text-card-foreground mb-4 flex-grow">"Steep learning curve at first, but incredibly satisfying once it clicks. I struggled until I realized how important resource adjacency is! The deck-building aspect adds amazing depth - my woodland strategy with upgraded forest cards is unstoppable against The Keep. Would give 5 stars if the tutorial was more comprehensive."</p>
+                                <div class="flex justify-between items-center mt-auto pt-4 border-t border-border">
+                                    <p class="text-muted-foreground text-sm font-medium">- StrategyPuzzler</p>
+                                    <span class="text-muted-foreground text-xs">May 7, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="flex justify-center mt-8">
+                        <!-- Example Buttons - functionality not implemented -->
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#805A3B] bg-transparent shadow-sm hover:bg-[#D2B48C]/50 hover:text-[#654321] text-[#654321] h-9 px-4 py-2 mr-4">Read More Reviews</button>
+                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-[#805A3B] text-white shadow hover:bg-[#654321]/90 h-9 px-4 py-2">Share Your Experience</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-secondary py-16 px-4 sm:px-6">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-foreground">Frequently Asked Questions</h2>
+                        <p class="text-muted-foreground max-w-3xl mx-auto">Everything you need to know about Drop Duchy</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">What type of game is Drop Duchy?</h3>
+                                <p class="text-muted-foreground">Drop Duchy is a unique roguelike puzzle game that combines Tetris-style block placement with strategic deck building. You'll build your duchy by strategically placing territory blocks, managing resources, and battling enemies through card-based mechanics.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">Is there a multiplayer mode?</h3>
+                                <p class="text-muted-foreground">Currently, Drop Duchy is a single-player experience focused on providing challenging roguelike progression. However, we're exploring cooperative multiplayer options for future updates where players can share resources and strategies.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">What platforms is Drop Duchy available on?</h3>
+                                <p class="text-muted-foreground">Drop Duchy is currently available on PC (Steam, Epic Games Store), Nintendo Switch, and mobile devices (iOS and Android). We're working on PlayStation and Xbox versions to be released later in 2025.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">What makes Drop Duchy different from other puzzle games?</h3>
+                                <p class="text-muted-foreground">Unlike traditional Tetris where completing lines clears them, in Drop Duchy, completed lines multiply resource production. Combined with our innovative card system that affects block types and abilities, each run offers a unique strategic challenge with multiple viable approaches.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">How does progression work?</h3>
+                                <p class="text-muted-foreground">Drop Duchy features meta-progression where each run, even failed ones, earns you experience points. These can be spent on permanent upgrades, new card unlocks, and additional starting resources. As you progress, you'll unlock new biomes, more challenging bosses, and rare cards.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl border text-card-foreground shadow bg-card border-border">
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold mb-2">Are there microtransactions?</h3>
+                                <p class="text-muted-foreground">No! Drop Duchy is a premium game with a one-time purchase price. All content updates and expansions since our initial release have been free, and we're committed to continuing this approach. We believe in delivering complete experiences without additional costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </section>
+
+            <section class="py-16 bg-accent">
+                <div class="container mx-auto px-4 sm:px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-foreground">Join Drop Duchy Community</h2>
+                        <p class="text-muted-foreground max-w-3xl mx-auto">Connect with other players, get tips, and stay updated on the latest Drop Duchy content</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="https://reddit.com/r/DropDuchy" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-border bg-card text-card-foreground shadow transition-all duration-300 hover:shadow-md hover:scale-105">
+                            <div class="p-6 text-center">
+                                <div class="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                                </div>
+                                <h3 class="font-semibold mb-2">Reddit</h3>
+                                <p class="text-muted-foreground text-sm">Share strategies, deck builds, and join weekly challenges on r/DropDuchy</p>
+                            </div>
+                        </a>
+                        <a href="https://discord.gg/dropduchy" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-border bg-card text-card-foreground shadow transition-all duration-300 hover:shadow-md hover:scale-105">
+                            <div class="p-6 text-center">
+                                <div class="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path></svg>
+                                </div>
+                                <h3 class="font-semibold mb-2">Discord</h3>
+                                <p class="text-muted-foreground text-sm">Join our server with 50,000+ members for real-time discussion and dev AMAs</p>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/DropDuchyGame" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-border bg-card text-card-foreground shadow transition-all duration-300 hover:shadow-md hover:scale-105">
+                            <div class="p-6 text-center">
+                                <div class="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                                </div>
+                                <h3 class="font-semibold mb-2">Instagram</h3>
+                                <p class="text-muted-foreground text-sm">Follow us for gameplay highlights, fan art spotlights, and upcoming feature previews</p>
+                            </div>
+                        </a>
+                        <a href="https://youtube.com/c/DropDuchy" target="_blank" rel="noopener noreferrer" class="rounded-xl border border-border bg-card text-card-foreground shadow transition-all duration-300 hover:shadow-md hover:scale-105">
+                            <div class="p-6 text-center">
+                                <div class="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                                </div>
+                                <h3 class="font-semibold mb-2">YouTube</h3>
+                                <p class="text-muted-foreground text-sm">Watch tutorials, strategy guides, and Drop Duchy weekly dev livestreams every Friday</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-10 text-center">
+                        <p class="text-muted-foreground max-w-3xl mx-auto">Join Drop Duchy weekly developer livestreams on Discord and YouTube every Friday at 4PM ET where they showcase upcoming features and answer community questions</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-8 bg-background border-t border-border">
+            <div class="container mx-auto px-4 sm:px-6 text-center text-muted-foreground">
+                <div class="mb-4">
+                    <img alt="Drop Duchy logo" loading="lazy" width="40" height="40" decoding="async" data-nimg="1" style="color:transparent" src="images/game-logo.png" class="mx-auto mb-2"/>
+                    <p class="text-lg font-semibold">Drop Duchy</p>
+                </div>
+                <div class="flex justify-center gap-4 mb-4">
+                    <a href="https://reddit.com/r/DropDuchy" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        <span class="sr-only">Reddit</span>
+                    </a>
+                    <a href="https://discord.gg/dropduchy" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path></svg>
+                        <span class="sr-only">Discord</span>
+                    </a>
+                    <a href="https://twitter.com/DropDuchyGame" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="https://youtube.com/c/DropDuchy" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </div>
+                <div class="text-sm mb-2">
+                    <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-primary transition-colors">Terms of Service</a> | 
+                    <a href="#" class="hover:text-primary transition-colors">Contact Us</a>
+                </div>
+                <p class="text-xs">&copy; 2025 Drop Duchy. All rights reserved. Placeholder URLs used.</p>
+                <p class="text-xs mt-1">This is a fan-created website and is not affiliated with the official Drop Duchy game or its developers.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

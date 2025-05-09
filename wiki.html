@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Drop Duchy Official Wiki - Gameplay, Cards, Combat & More (2025)</title>
+    <meta name="description" content="The official community-driven Wiki for Drop Duchy. Find guides, information on gameplay mechanics, cards, units, buildings, combat strategies, and much more."/>
+    <meta name="keywords" content="drop duchy wiki, drop duchy guide, game wiki, strategy game wiki, puzzle roguelike wiki, drop duchy gameplay, drop duchy cards, drop duchy combat"/>
+    <link rel="canonical" href="https://dropduchy.org/wiki.html"/>
+    <meta property="og:title" content="Official Drop Duchy Wiki & Knowledge Base"/>
+    <meta property="og:description" content="Explore the depths of Drop Duchy! Your ultimate resource for game information, strategies, and community knowledge."/>
+    <meta property="og:url" content="https://dropduchy.org/wiki.html"/>
+    <meta property="og:image" content="https://dropduchy.org/images/gallery/Drop_Duchy_Wiki_Banner.png"/> 
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@DropDuchyGame"/> 
+    <meta name="twitter:title" content="Drop Duchy Wiki - The Complete Guide"/>
+    <meta name="twitter:description" content="Dive into the official Drop Duchy Wiki for comprehensive guides, tips, and information on all aspects of the game."/>
+    <meta name="twitter:image" content="https://dropduchy.org/images/gallery/Drop_Duchy_Wiki_Banner.png"/> 
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="48x48"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Wiki page */
+        .wiki-content h2 {
+            font-size: 1.75rem; /* Tailwind text-2xl */
+            color: #654321; /* Theme color */
+            margin-top: 2.5rem; /* Tailwind mt-10 */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            border-bottom: 2px solid #A0522D; /* Theme border */
+            padding-bottom: 0.5rem; /* Tailwind pb-2 */
+        }
+        .wiki-content h3 {
+            font-size: 1.25rem; /* Tailwind text-xl */
+            color: #805A3B; /* Theme secondary color */
+            margin-top: 1.5rem; /* Tailwind mt-6 */
+            margin-bottom: 0.75rem; /* Tailwind mb-3 */
+        }
+        .wiki-content p, .wiki-content ul, .wiki-content ol {
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            line-height: 1.6;
+        }
+        .wiki-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem; /* Tailwind pl-6 */
+        }
+        .wiki-content ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem; /* Tailwind pl-6 */
+        }
+        .wiki-content strong {
+            color: #654321;
+        }
+        .wiki-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .wiki-nav li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.2s ease-in-out;
+        }
+        .wiki-nav li a:hover {
+            background-color: #C19A6B; /* Theme hover color */
+            color: white;
+        }
+        .wiki-nav li a.active-section {
+            background-color: #805A3B;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+    <script>
+        // Basic theme switcher (mimicking original from index.html)
+        ((e,t,r,n,o,l,a,i)=>{let u=document.documentElement,s=["light","dark"];function c(t){(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&l?o.map(e=>l[e]||e):o;r?(u.classList.remove(...n),u.classList.add(t)):u.setAttribute(e,t)}),i&&s.includes(t)&&(u.style.colorScheme=t)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=a&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})('class','theme','light',null,['light','dark'],null,true,true);
+    </script>
+</head>
+<body class="antialiased bg-[#f5eadd] text-foreground">
+
+    <header class="sticky top-0 z-50 w-full border-b border-[#654321]/50 bg-[#654321] py-4">
+        <div class="container px-4 sm:px-6 flex items-center justify-between mx-auto">
+            <div class="flex items-center gap-2">
+                <img alt="Drop Duchy logo" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="images/game-logo.png"/>
+                <a class="font-bold text-xl text-white" href="index.html">Drop Duchy</a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a class="flex items-center text-white bg-[#805A3B] rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="wiki.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scroll-text mr-2 h-4 w-4"><path d="M15 12h-5"></path><path d="M15 8h-5"></path><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg>Wiki
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="drop-duchy-download.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-down mr-2 h-4 w-4"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M12 18v-6"></path><path d="m9 15 3 3 3-3"></path></svg>Download
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="update.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw mr-2 h-4 w-4"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>Update
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="blog.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sticky-note mr-2 h-4 w-4"><path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8Z"></path><path d="M15 3v4a2 2 0 0 0 2 2h4"></path></svg>Blog
+                </a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="more-tetris.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2 mr-2 h-4 w-4"><line x1="6" y1="11" x2="10" y2="11" /><line x1="8" y1="9" x2="8" y2="13" /><line x1="15" y1="12" x2="15.01" y2="12" /><line x1="18" y1="10" x2="18.01" y2="10" /><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.01.152v0a4.842 4.842 0 0 0 4.518 4.971A4.842 4.842 0 0 0 12 18.211a4.842 4.842 0 0 0 4.79-4.5a4.842 4.842 0 0 0 4.518-4.971v0c0-.05-.004-.1-.01-.152A4 4 0 0 0 17.32 5z" /></svg>More Tetris
+                </a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button id="mobile-menu-button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-[#805A3B] hover:text-white h-9 w-9 md:hidden" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu text-white"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#654321] border-t border-[#654321]/50">
+            <nav class="flex flex-col items-center gap-4 py-4">
+                <a class="flex items-center text-white bg-[#805A3B] rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="wiki.html">Wiki</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="drop-duchy-download.html">Download</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="update.html">Update</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="blog.html">Blog</a>
+                <a class="flex items-center text-gray-200 hover:text-white hover:bg-[#805A3B] hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="more-tetris.html">More Tetris</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex min-w-screen min-h-screen flex-col pt-[0rem] items-center">
+        <div class="absolute z-[-99] pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        
+        <div class="container mx-auto px-4 py-8 sm:py-12">
+            <header class="mb-10 text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold text-[#654321] !mb-3">The Official Drop Duchy Wiki</h1>
+                <p class="text-lg text-muted-foreground/90">Your comprehensive guide to the world of Drop Duchy. Explore, learn, and conquer!</p>
+            </header>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Sticky Sidebar Navigation -->
+                <aside class="md:w-1/4 lg:w-1/5 wiki-nav md:sticky md:top-24 self-start bg-[#C19A6B]/10 p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold text-[#654321] mb-4">Wiki Sections</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#wiki-overview" class="text-gray-700 hover:text-[#805A3B]">Welcome to the Wiki</a></li>
+                        <li><a href="#wiki-game-basics" class="text-gray-700 hover:text-[#805A3B]">Game Basics</a></li>
+                        <li><a href="#wiki-building-economy" class="text-gray-700 hover:text-[#805A3B]">Building & Economy</a></li>
+                        <li><a href="#wiki-combat" class="text-gray-700 hover:text-[#805A3B]">Combat System</a></li>
+                        <li><a href="#wiki-cards-deckbuilding" class="text-gray-700 hover:text-[#805A3B]">Cards & Deckbuilding</a></li>
+                        <li><a href="#wiki-factions" class="text-gray-700 hover:text-[#805A3B]">Factions</a></li>
+                        <li><a href="#wiki-biomes" class="text-gray-700 hover:text-[#805A3B]">Biomes & Environments</a></li>
+                        <li><a href="#wiki-meta-progression" class="text-gray-700 hover:text-[#805A3B]">Meta-Progression</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="md:w-3/4 lg:w-4/5 wiki-content bg-[#C19A6B]/20 p-6 sm:p-8 rounded-lg shadow-lg border border-[#A0522D]/30">
+                    
+                    <section id="wiki-overview">
+                        <h2>Welcome to the Drop Duchy Wiki!</h2>
+                        <p>Welcome, brave Duke or Duchess, to the official knowledge base for Drop Duchy! This wiki is your ultimate resource for understanding the intricate mechanics, diverse elements, and strategic depths of the game. Whether you're a new player learning the ropes or a seasoned veteran seeking advanced tactics, you'll find valuable information here.</p>
+                        <p>Drop Duchy uniquely blends tile-matching puzzle gameplay with strategic deck-building, robust resource management, and thrilling roguelike challenges. Build your duchy, command your armies, and carve out your legacy block by block!</p>
+                        <p>This wiki is a living document. While currently maintained by the development team, we envision it growing with community contributions in the future. Dive in and explore!</p>
+                    </section>
+
+                    <section id="wiki-game-basics">
+                        <h2>Game Basics</h2>
+                        <h3>Core Gameplay Loop</h3>
+                        <p>The core of Drop Duchy revolves around a dynamic loop:</p>
+                        <ul>
+                            <li><strong>Block Placement:</strong> Strategically place falling blocks of various shapes and functions onto the game board to construct your territory and create resource networks.</li>
+                            <li><strong>Resource Collection:</strong> Completing lines or specific patterns with blocks doesn't clear them in the traditional sense; instead, it often multiplies resource generation from adjacent, compatible structures. Gather essential resources like Wood, Stone, Food, and Gold.</li>
+                            <li><strong>Building & Upgrading:</strong> Use collected resources to construct a variety of buildings, recruit military units, research new technologies, and upgrade existing structures or cards.</li>
+                            <li><strong>Deckbuilding:</strong> Acquire and upgrade a diverse set of cards that provide powerful passive bonuses, active abilities, new units, or unique building options. Strategically build your deck to suit your playstyle.</li>
+                            <li><strong>Combat & Defense:</strong> Raise an army to defend your duchy from encroaching enemies and powerful bosses. Engage in tactical combat where unit placement and counters are key.</li>
+                            <li><strong>Roguelike Progression:</strong> Each run presents new challenges and opportunities. Even in defeat, you gain experience towards permanent meta-upgrades, unlocking new content and bonuses for future attempts.</li>
+                        </ul>
+
+                        <h3>Resources</h3>
+                        <p>Effectively managing resources is crucial for your duchy's survival and growth. Key resources include (but may not be limited to):</p>
+                        <ul>
+                            <li><strong>Wood:</strong> Primarily used for basic buildings and some unit recruitment. Gathered from forest tiles and lumber mills.</li>
+                            <li><strong>Stone:</strong> Essential for sturdier constructions, defensive structures, and advanced buildings. Quarried from mountainous terrain.</li>
+                            <li><strong>Food:</strong> Required to sustain your population and recruit/maintain certain units. Produced by farms and compatible terrain.</li>
+                            <li><strong>Gold:</strong> Used for advanced upgrades, trading at the Market Guild, and maintaining powerful units or structures. Can be generated through markets, trade, or special events.</li>
+                            <li><strong>Mana/Energy (Placeholder):</strong> A potential special resource used for casting powerful card abilities or fueling magical structures. (Details to be expanded)</li>
+                        </ul>
+                        <p>Resource generation is often boosted by synergistic placement – e.g., a Lumber Mill next to a Forest tile produces more Wood.</p>
+                        
+                        <h3>Controls (Assumed PC)</h3>
+                        <p>While specific controls can be customized, typical PC controls might include:</p>
+                        <ul>
+                            <li><strong>Arrow Keys / A & D:</strong> Move falling block left/right.</li>
+                            <li><strong>Arrow Key Up / W:</strong> Rotate falling block.</li>
+                            <li><strong>Arrow Key Down / S:</strong> Soft drop block.</li>
+                            <li><strong>Spacebar:</strong> Hard drop block.</li>
+                            <li><strong>Shift / C:</strong> Hold/Store current block (if feature is available).</li>
+                            <li><strong>Mouse:</strong> Interact with UI elements, select cards, place buildings from menus, etc.</li>
+                        </ul>
+                    </section>
+
+                    <section id="wiki-building-economy">
+                        <h2>Building Your Duchy & Economy</h2>
+                        <h3>Building Blocks & Terrain Synergy</h3>
+                        <p>The foundation of your duchy is built upon the strategic placement of blocks onto diverse terrain types. Each terrain (e.g., Forests, Grasslands, Rivers, Mountains) offers unique benefits or challenges. Placing specific building blocks adjacent to compatible terrain types is key to maximizing resource output and unlocking powerful synergies. For example, a farm benefits greatly from fertile grassland and access to water.</p>
+                        
+                        <h3>Key Building Types</h3>
+                        <p>Your duchy can host a variety of structures, each serving a vital purpose:</p>
+                        <ul>
+                            <li><strong>Resource Production:</strong>
+                                <ul>
+                                    <li><em>Farms:</em> Generate Food.</li>
+                                    <li><em>Lumber Mills:</em> Produce Wood.</li>
+                                    <li><em>Quarries:</em> Mine Stone.</li>
+                                    <li><em>Markets:</em> Generate Gold.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Military Structures:</strong>
+                                <ul>
+                                    <li><em>Barracks:</em> Recruit Swordsmen and Axemen.</li>
+                                    <li><em>Archery Ranges:</em> Train Archers.</li>
+                                    <li><em>Defensive Walls & Towers:</em> Enhance your duchy's defenses.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Technology & Support:</strong>
+                                <ul>
+                                    <li><em>Workshops/Smithies:</em> Unlock unit upgrades or new building technologies.</li>
+                                    <li><em>Libraries/Academies:</em> Research new cards or global bonuses.</li>
+                                    <li><em>Market Guild:</em> Allows trading of resources and acquisition/upgrading of cards.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Many more specialized buildings can be unlocked through progression and card discovery!</p>
+
+                        <h3>Economic Strategy</h3>
+                        <p>A thriving economy is the backbone of a strong duchy. Consider these strategic points:</p>
+                        <ul>
+                            <li><strong>Balanced Growth:</strong> Ensure a steady income of all necessary resources. Don't over-specialize too early.</li>
+                            <li><strong>Efficient Placement:</strong> Maximize terrain synergies to boost resource production without overextending.</li>
+                            <li><strong>Expansion vs. Consolidation:</strong> Know when to expand your territory to claim new resources and when to focus on fortifying your current holdings.</li>
+                            <li><strong>Market Opportunities:</strong> Utilize the Market Guild effectively to offload surplus resources or acquire those you're lacking.</li>
+                        </ul>
+                    </section>
+
+                    <section id="wiki-combat">
+                        <h2>Combat System</h2>
+                        <h3>Core Mechanics</h3>
+                        <ul>
+                            <li><strong>Unit Counters (Rock-Paper-Scissors):</strong> Combat heavily relies on a counter system:
+                                <ul>
+                                    <li><strong>Archers</strong> deal bonus damage to <strong>Axemen</strong>.</li>
+                                    <li><strong>Axemen</strong> deal bonus damage to <strong>Swordsmen</strong>.</li>
+                                    <li><strong>Swordsmen</strong> deal bonus damage to <strong>Archers</strong>.</li>
+                                </ul>
+                                Exploiting these matchups is critical for success. A countered unit will effectively perform worse, while a countering unit gains a significant advantage.
+                            </li>
+                            <li><strong>Unit Merging:</strong> When two friendly military unit groups are placed adjacent to each other, they merge. The resulting group will adopt the type of the unit that was most numerous. For example, 10 Archers merging with 5 Swordsmen will result in a group of 15 Archers. Enemies also merge, so anticipate and sometimes manipulate these merges to your advantage.</li>
+                        </ul>
+
+                        <h3>Unit Types</h3>
+                        <ul>
+                            <li><strong>Swordsmen:</strong> Standard melee infantry, effective against Archers. Form the backbone of many early-game armies.</li>
+                            <li><strong>Axemen:</strong> Heavy melee infantry, specialized in breaking through lines and countering Swordsmen.</li>
+                            <li><strong>Archers:</strong> Ranged units that can attack from a distance, crucial for dealing with Axemen and providing fire support.</li>
+                            <li><em>(More specialized units can be unlocked via cards and technology!)</em></li>
+                        </ul>
+
+                        <h3>Enemy Types & Behaviors</h3>
+                        <p>You will face a variety of foes, from basic grunts spawned by certain blocks to elite units and powerful bosses. Enemies may have different attack patterns, speeds, and resistances. Understanding their behavior is key to effective defense. (Details on specific enemies will be added as they are "revealed").</p>
+
+                        <h3>Bosses</h3>
+                        <p>Periodically, powerful Bosses will challenge your duchy. These encounters are unique and often feature special mechanics that require adaptive strategies. Defeating them yields significant rewards. Examples include the formidable guardians of the "Shifting Sands" biome.</p>
+                        
+                        <h3>Combat Tips & Strategies</h3>
+                        <ul>
+                            <li><strong>Know Your Counters:</strong> Always try to engage enemy units with your own units that counter them.</li>
+                            <li><strong>Strategic Positioning:</strong> Use terrain to your advantage. Chokepoints can limit enemy numbers, while high ground might benefit ranged units.</li>
+                            <li><strong>Reserve Enemy Spawners:</strong> If possible, hold an enemy-spawning block in your reserve to reduce the number of immediate threats.</li>
+                            <li><strong>Focus Fire:</strong> Concentrate your army's attacks on high-threat targets or to quickly eliminate weakened enemy groups.</li>
+                            <li><strong>Anticipate Merges:</strong> Be mindful of how enemy units might merge and try to prevent them from forming overwhelmingly large groups of a single dangerous type.</li>
+                            <li><strong>Utilize Cards:</strong> Combat-focused cards can turn the tide by buffing your units, debuffing enemies, or providing direct damage.</li>
+                        </ul>
+                    </section>
+
+                    <section id="wiki-cards-deckbuilding">
+                        <h2>Cards & Deckbuilding</h2>
+                        <h3>Overview</h3>
+                        <p>Cards are a central pillar of Drop Duchy's strategy, offering immense variety and replayability. With over 80 unique cards (and more added in updates like the "Ancient Relics" pack!), your deck defines your approach to building, economy, and warfare.</p>
+
+                        <h3>Card Types</h3>
+                        <ul>
+                            <li><strong>Building Cards:</strong> These cards might unlock new building types, enhance existing ones (e.g., "Artisan's Toolkit" improving resource block synergies), or provide global bonuses to your construction efforts.</li>
+                            <li><strong>Technology Cards:</strong> Grant access to new technologies, passive upgrades for your duchy, or unlock advanced unit types/abilities.</li>
+                            <li><strong>Unit Enhancement Cards:</strong> Directly improve the stats or abilities of your military units (e.g., increased damage for Archers, more health for Swordsmen).</li>
+                            <li><strong>Resource Cards:</strong> Can provide instant resource infusions, improve resource generation rates, or alter how resources are gathered.</li>
+                            <li><strong>Spell/Ability Cards:</strong> Offer powerful, often single-use effects, such as direct damage to enemies, defensive buffs, or manipulation of the game board.</li>
+                        </ul>
+                        
+                        <h3>Acquiring & Upgrading Cards</h3>
+                        <ul>
+                            <li><strong>Progression Unlocks:</strong> Many cards are unlocked by leveling up your player profile or completing specific in-game challenges.</li>
+                            <li><strong>Market Guild:</strong> The Market Guild is a key location where you can spend Gold to purchase new cards from a rotating selection or upgrade cards you already own.</li>
+                            <li><strong>In-Game Events & Rewards:</strong> Certain events or defeating powerful enemies might also reward you with new cards.</li>
+                        </ul>
+
+                        <h3>Deckbuilding Strategy</h3>
+                        <p>Crafting an effective deck is an art form in Drop Duchy:</p>
+                        <ul>
+                            <li><strong>Synergy is Key:</strong> Look for cards that complement each other. A deck focused on wood production might include cards that boost lumber mills, reduce wood costs for buildings, and enhance units that benefit from forest terrain.</li>
+                            <li><strong>Adapt to Your Faction:</strong> Each faction may have unique cards or benefit more from certain card types.</li>
+                            <li><strong>Early vs. Late Game:</strong> Consider cards that provide early advantages versus those that offer powerful late-game scaling.</li>
+                            <li><strong>Counter a Nemesis:</strong> If you consistently struggle against certain enemy types or bosses, try to include cards in your deck that specifically help counter them.</li>
+                            <li><strong>Don't Over-Specialize (Usually):</strong> While a focused deck can be powerful, ensure you have some flexibility to adapt to unexpected challenges.</li>
+                        </ul>
+                    </section>
+
+                    <section id="wiki-factions">
+                        <h2>Factions</h2>
+                        <p>Players can align with one of three distinct factions, each offering unique playstyles, quests, and exclusive rewards. Choosing a faction impacts your starting conditions and available strategies.</p>
+                        <ul>
+                            <li><strong>The Duchy (Royalists):</strong>
+                                <ul>
+                                    <li><em>Characteristics:</em> Often represents a balanced approach, focusing on strong defenses, steady economic growth, and well-rounded military units. They might excel at traditional fortification and resource management.</li>
+                                    <li><em>Potential Unique Quests/Rewards:</em> Might involve protecting royal lineage, achieving economic milestones, or mastering defensive strategies. Rewards could include unique defensive building cards or veteran unit upgrades.</li>
+                                </ul>
+                            </li>
+                            <li><strong>The Republic (Merchants/Innovators):</strong>
+                                <ul>
+                                    <li><em>Characteristics:</em> May focus on economic prowess, trade, rapid expansion, and technological innovation. Their units might be more specialized or rely on clever tactics and card synergies.</li>
+                                    <li><em>Potential Unique Quests/Rewards:</em> Could revolve around establishing trade routes, accumulating wealth, or pioneering new technologies. Rewards might include powerful economic cards, unique market interactions, or advanced tech upgrades.</li>
+                                </ul>
+                            </li>
+                            <li><strong>The Cult (Zealots/Mystics):</strong>
+                                <ul>
+                                    <li><em>Characteristics:</em> Likely to delve into more esoteric or unconventional strategies, perhaps utilizing unique magical abilities, sacrificial mechanics, or specialized, powerful-but-costly units. Their playstyle might be high-risk, high-reward.</li>
+                                    <li><em>Potential Unique Quests/Rewards:</em> Could involve forbidden rituals, spreading their influence, or harnessing dark powers. Rewards might include unique spell cards, faction-specific unit transformations, or powerful artifacts.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                         <p>More details on faction-specific units, cards, and abilities will be added as the lore expands!</p>
+                    </section>
+
+                    <section id="wiki-biomes">
+                        <h2>Biomes & Environments</h2>
+                        <p>The world of Drop Duchy is composed of various biomes, each presenting unique tactical considerations, resource availabilities, and potential threats.</p>
+                        <ul>
+                            <li><strong>Standard Biomes:</strong>
+                                <ul>
+                                    <li><em>Forests:</em> Rich in Wood. May offer cover or hinder movement for certain units. Ideal for Lumber Mills.</li>
+                                    <li><em>Grasslands:</em> Fertile land suitable for Farms and general construction. Often open terrain.</li>
+                                    <li><em>Mountains/Hills:</em> Source of Stone. Can provide defensive advantages or act as chokepoints. Suitable for Quarries.</li>
+                                    <li><em>Lakes/Rivers:</em> Can provide Food bonuses (fishing) or be integrated into defensive strategies. May require specific buildings (bridges) to cross.</li>
+                                    <li><em>Villages:</em> May offer unique interaction points, quests, or recruitment opportunities.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Special Biomes:</strong>
+                                <ul>
+                                    <li><em>The Shifting Sands Biome:</em> A challenging desert environment introduced in Update v1.2.0. Features unique hazards (e.g., quicksand, sandstorms), new enemy types adapted to the desert, and formidable bosses. Resource availability might be scarce or different from standard biomes.</li>
+                                    <li><em>(Future updates may introduce more unique biomes like Volcanic Wastes, Frozen Tundras, or Corrupted Lands, each with their own rules and content.)</em></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="wiki-meta-progression">
+                        <h2>Meta-Progression & Challenges</h2>
+                        <h3>Player Level & Permanent Unlocks</h3>
+                        <p>Even when a run ends in defeat, your efforts contribute to your overall meta-progression. By gaining experience points (XP) from playing, you will level up your player profile. Each level up can grant permanent bonuses and unlocks, such as:</p>
+                        <ul>
+                            <li><strong>New Cards:</strong> Adding new strategic options to your potential deck pool for all future runs.</li>
+                            <li><strong>Starting Resource Boosts:</strong> Begin future runs with slightly more Wood, Gold, or other key resources.</li>
+                            <li><strong>Faction-Specific Perks:</strong> Enhancements that apply when playing a particular faction.</li>
+                            <li><strong>Unlockable Game Features:</strong> Access to new game modes, higher difficulty levels, or new starting options.</li>
+                            <li><strong>Increased Vitality/Base Stats:</strong> Minor permanent improvements to your core duchy's resilience.</li>
+                        </ul>
+                        <p>This system ensures that every game played is a step forward, making you progressively stronger and better equipped for the challenges ahead.</p>
+
+                        <h3>The Challenge System</h3>
+                        <p>Drop Duchy features a robust system of 100 distinct challenges. These challenges encourage players to explore different strategies, achieve specific milestones, or overcome difficult scenarios. Examples might include:</p>
+                        <ul>
+                            <li>Winning a run with a specific faction.</li>
+                            <li>Defeating a boss under certain conditions.</li>
+                            <li>Building a duchy that reaches a certain economic output.</li>
+                            <li>Utilizing a particular card synergy to great effect.</li>
+                            <li>Surviving for a set amount of time against overwhelming odds.</li>
+                        </ul>
+                        <p>Completing challenges rewards players with substantial XP boosts, unique cosmetic unlocks (if applicable), or even rare and powerful cards, further fueling meta-progression and offering tangible goals beyond simply winning a run.</p>
+                    </section>
+                    
+                    <p class="mt-12 text-center text-gray-600 italic">This Wiki is constantly evolving. Check back for updates and more detailed information!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-[#654321]/30 bg-[#654321] text-gray-200">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="py-8">
+                <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+                    <div class="max-w-xs">
+                        <img alt="Drop Duchy" loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="images/game-logo.png"/>
+                        <p class="text-xl font-bold mt-2 text-white">DropDuchy.com</p>
+                        <p class="font-medium mt-1 text-gray-300">Build Your Legacy, Block by Block!</p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-white">Game Info</p>
+                        <div class="mt-6 grid grid-cols-1 space-y-2 text-sm">
+                            <a class="transition hover:opacity-75 hover:text-white" href="index.html#key-features">Features</a>
+                            <a class="transition hover:opacity-75 hover:text-white" href="index.html#gameplay-section">Gameplay</a>
+                            <a class="transition hover:opacity-75 hover:text-white" href="drop-duchy-download.html">Download</a>
+                            <a class="transition hover:opacity-75 hover:text-white" href="wiki.html">Game Wiki</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-medium text-white">Community</p>
+                        <div class="mt-6 grid grid-cols-1 space-y-2 text-sm">
+                            <a target="_blank" class="transition hover:opacity-75 hover:text-white" href="https://reddit.com/r/DropDuchy">Reddit</a>
+                            <a target="_blank" class="transition hover:opacity-75 hover:text-white" href="https://discord.gg/YOUR_DISCORD_INVITE">Discord</a> 
+                            <a target="_blank" class="transition hover:opacity-75 hover:text-white" href="https://twitter.com/DropDuchyGame">Twitter</a> 
+                            <a target="_blank" class="transition hover:opacity-75 hover:text-white" href="https://youtube.com/c/DropDuchy">YouTube</a> 
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-medium text-white">Helpful Links</p>
+                        <div class="mt-6 grid grid-cols-1 space-y-2 text-sm">
+                            <a href="privacy.html" class="transition hover:opacity-75 hover:text-white">Privacy Policy</a>
+                            <a href="terms.html" class="transition hover:opacity-75 hover:text-white">Terms of Service</a>
+                            <a href="mailto:contact@dropduchy.com" class="transition hover:opacity-75 hover:text-white">Contact Us</a>
+                            <a href="blog.html" class="transition hover:opacity-75 hover:text-white">Blog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-gray-500/50 flex flex-col items-center pt-8">
+                    <p class="text-sm text-gray-300">Drop Duchy is a fictional game created for demonstration purposes. All content is illustrative.</p>
+                    <p class="text-xs text-gray-400 mt-2">&copy; 2025 DropDuchy.com. All placeholder content and images are for illustrative purposes only.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll for internal links & active section highlighting
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.wiki-nav a[href^="#"]');
+            const sections = document.querySelectorAll('.wiki-content section');
+            const navLinks = Array.from(document.querySelectorAll('.wiki-nav a'));
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = document.querySelector('header').offsetHeight + 20; // Adjust offset as needed
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+
+                        // Update active class on click (optional, scroll listener is more robust)
+                        // navLinks.forEach(navLink => navLink.classList.remove('active-section'));
+                        // this.classList.add('active-section');
+                    }
+                });
+            });
+
+            function onScroll() {
+                let currentSectionId = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - document.querySelector('header').offsetHeight - 100; // Adjust for sticky header and some leeway
+                    if (window.pageYOffset >= sectionTop) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(navLink => {
+                    navLink.classList.remove('active-section');
+                    if (navLink.getAttribute('href') === `#\${currentSectionId}`) {
+                        navLink.classList.add('active-section');
+                    }
+                });
+                // Fallback for the top of the page
+                 if (window.pageYOffset < sections[0].offsetTop - document.querySelector('header').offsetHeight - 100 && currentSectionId === '') {
+                     if(navLinks[0].getAttribute('href') === '#wiki-overview') {
+                         navLinks[0].classList.add('active-section');
+                     }
+                 }
+            }
+
+            window.addEventListener('scroll', onScroll);
+            onScroll(); // Initial check
+        });
+    </script>
+    <script src="js/script.js" defer></script>
+</body>
+</html> 
