@@ -1,0 +1,55 @@
+/* Basic Reset or Global Styles */
+body {
+    font-family: sans-serif; /* Placeholder font */
+    /* Example: Define global text color if not using Tailwind's text-foreground extensively */
+}
+
+/* 
+Tailwind Custom Color Placeholders / Examples 
+If you set up a local Tailwind CSS environment, you would define these in your tailwind.config.js.
+For now, using the CDN, these specific class names (bg-primary, text-muted-foreground, etc.) 
+will mostly fall back to Tailwind defaults or might not have an effect unless they are default Tailwind names.
+
+:root {
+    --color-primary: #HEXCODE; 
+    --color-secondary: #HEXCODE;
+    --color-accent: #HEXCODE;
+    --color-background: #HEXCODE; 
+    --color-foreground: #HEXCODE; 
+    --color-muted-foreground: #HEXCODE;
+    --color-card: #HEXCODE;
+    --color-border: #HEXCODE;
+}
+
+.bg-primary { background-color: var(--color-primary); }
+.text-primary { color: var(--color-primary); }
+.hover\:text-primary:hover { color: var(--color-primary); }
+.hover\:bg-primary\/90:hover { background-color: hsla(var(--primary-hsl), 0.9); } // Assuming HSL conversion for opacity
+
+.bg-secondary { background-color: var(--color-secondary); }
+
+.bg-accent { background-color: var(--color-accent); }
+.hover\:bg-accent:hover { background-color: var(--color-accent); }
+.text-accent-foreground { color: var(--color-foreground); } // Assuming accent foreground is same as main foreground for now
+.hover\:text-accent-foreground:hover { color: var(--color-foreground); }
+
+.bg-background { background-color: var(--color-background); }
+.text-foreground { color: var(--color-foreground); }
+.text-muted-foreground { color: var(--color-muted-foreground); }
+.bg-card { background-color: var(--color-card); }
+.border-input { border-color: var(--color-border); } // Or just 'border-border'
+.border-border { border-color: var(--color-border); }
+
+*/
+
+/* Custom scrollbar hiding for gallery (if needed and not handled by Tailwind plugin) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Additional custom styles can be added here */ 
