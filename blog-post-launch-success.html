@@ -19,6 +19,17 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon" sizes="48x48"/>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKJHDLV9X8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JKJHDLV9X8');
+</script>
+    
     <script>
         // Basic theme switcher (mimicking original from index.html)
         ((e,t,r,n,o,l,a,i)=>{let u=document.documentElement,s=["light","dark"];function c(t){(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&l?o.map(e=>l[e]||e):o;r?(u.classList.remove(...n),u.classList.add(t)):u.setAttribute(e,t)}),i&&s.includes(t)&&(u.style.colorScheme=t)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=a&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})("class","theme","light",null,["light","dark"],null,true,true);
